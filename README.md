@@ -43,3 +43,18 @@ once compiled this way, the dynamic lib file is necessary for the main program.
 every time main program is executed, it searches the dynamic lib and call the code in it.
 
 when a static lib and a dynamic lib coexist and have a common name, gcc priorly links the dynamic one.
+
+###endnotes
+-l : links with a library file
+-L<dir>: looks in dir for library files
+-c: compiles into obj files
+-w: no warning
+-Wall: shows all warnings
+-I<dir>: looks in dir for header files
+-shared: compiles into .so
+-O<num>: compilation optimisation (-O0 default; -O1 equals to -O; -O2 normal optimize; -O3; -Os space optimize)
+-static: force to link to *.a
+-std=c99: compiles using c99 standard
+
+
+
